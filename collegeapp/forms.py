@@ -1,5 +1,5 @@
 from django import forms
-from college_app.models import Sign_up
+from collegeapp.models import Sign_up
 
 class Sign_up(forms.ModelForm):
     class Meta:

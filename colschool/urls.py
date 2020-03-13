@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
-from college_app import views
+from collegeapp import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.index,name="index"),
-    url(r'^college_app',include('college_app.urls')),
+    url(r'^collegeapp/',include('collegeapp.urls')),
 
 ]
